@@ -11,5 +11,6 @@ else:
     print("Kérem adja meg a tvdb API kulcsát a tvdb-apikey.txt fileban")
     exit(-1)
 
-tvdb = tvdb_v4_official(tvdb_apikey)
+tvdb = tvdb_v4_official.TVDB(tvdb_apikey)
 
+print(tvdb)
